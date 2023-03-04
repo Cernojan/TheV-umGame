@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sliding Zmrd</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="sliding-image-container"></div>
+        <div id="label" style="text-align:center;margin-bottom: 20px">Zapamatuj si obrázek</span>
+        
+        <script src="SlidingImage.js"></script>
+        <script>
+            const imgSrc = 'images/data/1.png';
+            const duration = -1;
+            const side = 'left';
+            const options = [
+                'images/data/1.png',
+                'images/data/2.png',
+                'images/data/3.png',
+                'images/data/4.png',
+            ];
+
+            const slidingImage = new SlidingImage(imgSrc, duration, side, options);
+            slidingImage.start();
+        </script>
+    </body>
+</html>
